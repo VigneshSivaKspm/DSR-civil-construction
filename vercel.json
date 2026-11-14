@@ -1,7 +1,5 @@
 {
-  "cleanUrls": true,
-  "trailingSlash": false,
-  "rewrites": [{ "source": "/((?!assets/|images/|.*\..*).*)", "destination": "/index.html" }],
+  "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }],
   "headers": [
     {
       "source": "/(.*)",
@@ -22,7 +20,15 @@
       "headers": [{ "key": "Cache-Control", "value": "public, max-age=2592000, stale-while-revalidate=86400" }]
     },
     {
-      "source": "/(sitemap.xml|robots.txt|manifest.webmanifest)",
+      "source": "/sitemap.xml",
+      "headers": [{ "key": "Cache-Control", "value": "public, max-age=3600" }]
+    },
+    {
+      "source": "/robots.txt",
+      "headers": [{ "key": "Cache-Control", "value": "public, max-age=3600" }]
+    },
+    {
+      "source": "/manifest.webmanifest",
       "headers": [{ "key": "Cache-Control", "value": "public, max-age=3600" }]
     }
   ]
