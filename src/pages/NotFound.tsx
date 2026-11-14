@@ -8,6 +8,7 @@ export const NotFound: React.FC = () => {
   return (
     <>
       <SeoHead
+        noIndex
         title="Page Not Found (404)"
         description="The architectural page you are looking for does not exist. Return to the DSR Civil Constructions homepage or discuss your plot."
       />
