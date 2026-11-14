@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 120" width="100%" height="100%">
+  <defs>
+    <!-- Roof trim gradient -->
+    <linearGradient id="roofGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00B7FD" />
+      <stop offset="35%" stop-color="#005FDD" />
+      <stop offset="100%" stop-color="#032E7D" />
+    </linearGradient>
+
+    <!-- Glass reflection gradient -->
+    <linearGradient id="glassGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#51BDFB" stop-opacity="0.9" />
+      <stop offset="50%" stop-color="#FEFEFE" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#005FDD" stop-opacity="0.7" />
+    </linearGradient>
+
+    <!-- Base shadow gradient -->
+    <linearGradient id="shadowGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#032E7D" />
+      <stop offset="100%" stop-color="#001858" />
+    </linearGradient>
+  </defs>
+
+  <!-- Architectural sloping roof motif over the letters -->
+  <path d="M 28 42 L 140 12 L 230 12 L 118 42 Z" fill="url(#roofGrad)" />
+  <!-- Cyan reflection line along the top roof edge -->
+  <path d="M 28 42 L 140 12 L 230 12" fill="none" stroke="#00B7FD" stroke-width="2.5" stroke-linecap="round" />
+  
+  <!-- Facade glass reflection pane -->
+  <polygon points="120,18 200,18 160,42 80,42" fill="url(#glassGrad)" opacity="0.3" />
+
+  <!-- Single Gold Hard Hat resting gracefully on the left parapet/letter -->
+  <g transform="translate(18, 14) scale(0.65)">
+    <!-- Hard hat dome -->
+    <path d="M 12 30 C 12 14, 26 4, 46 4 C 66 4, 80 14, 80 30 Z" fill="#FFBB02" />
+    <!-- Ridge on hat -->
+    <path d="M 42 4 C 42 4, 46 16, 46 30" fill="none" stroke="#E5A700" stroke-width="2" />
+    <!-- Hat brim -->
+    <path d="M 4 30 C 4 28, 14 26, 46 26 C 78 26, 88 28, 88 30 C 88 34, 78 35, 46 35 C 14 35, 4 34, 4 30 Z" fill="#FFBB02" stroke="#D99B00" stroke-width="1" />
+    <!-- Hat reflection -->
+    <ellipse cx="32" cy="14" rx="8" ry="3" fill="#FFF2B2" opacity="0.6" transform="rotate(-15, 32, 14)" />
+  </g>
+
+  <!-- Main DSR Wordmark / Letters -->
+  <!-- Letter D -->
+  <path d="M 32 46 L 68 46 C 88 46, 98 56, 98 68 C 98 80, 88 90, 68 90 L 32 90 Z M 48 58 L 48 78 L 64 78 C 76 78, 82 74, 82 68 C 82 62, 76 58, 64 58 Z" fill="url(#shadowGrad)" />
+  
+  <!-- Letter S -->
+  <path d="M 142 56 C 138 50, 130 46, 118 46 C 104 46, 96 53, 96 61 C 96 70, 106 74, 120 76 C 136 79, 146 83, 146 93 C 146 104, 134 110, 118 110 C 102 110, 92 103, 88 95 L 102 88 C 105 93, 110 97, 118 97 C 124 97, 130 94, 130 89 C 130 83, 122 80, 110 77 C 94 74, 82 69, 82 59 C 82 49, 93 43, 108 43 C 120 43, 130 47, 136 53 Z" transform="translate(10, -10)" fill="url(#shadowGrad)" />
+
+  <!-- Letter R -->
+  <path d="M 168 46 L 198 46 C 212 46, 222 53, 222 63 C 222 71, 215 77, 206 80 L 224 98 L 206 98 L 190 82 L 184 82 L 184 98 L 168 98 Z M 184 56 L 184 72 L 196 72 C 203 72, 207 69, 207 64 C 207 59, 203 56, 196 56 Z" transform="translate(8, -8)" fill="url(#shadowGrad)" />
+
+  <!-- CIVIL CONSTRUCTIONS subtext -->
+  <text x="34" y="112" font-family="'Barlow Condensed', 'Inter', sans-serif" font-size="13.5" font-weight="700" letter-spacing="4" fill="#032E7D">CIVIL CONSTRUCTIONS</text>
+  
+  <!-- Fine geometric elevation line in cyan -->
+  <line x1="230" y1="12" x2="390" y2="12" stroke="#00B7FD" stroke-width="1.2" stroke-dasharray="4 3" opacity="0.7" />
+  <circle cx="390" cy="12" r="2" fill="#00B7FD" />
+</svg>

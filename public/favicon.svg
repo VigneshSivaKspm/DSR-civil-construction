@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <rect width="64" height="64" rx="14" fill="#FEFEFE" />
+  <path d="M 8 36 L 40 12 L 56 12 L 24 36 Z" fill="#005FDD" />
+  <path d="M 8 36 L 40 12 L 56 12" fill="none" stroke="#00B7FD" stroke-width="2" />
+  <!-- Gold hard hat -->
+  <g transform="translate(4, 16) scale(0.4)">
+    <path d="M 12 30 C 12 14, 26 4, 46 4 C 66 4, 80 14, 80 30 Z" fill="#FFBB02" />
+    <path d="M 4 30 C 4 28, 14 26, 46 26 C 78 26, 88 28, 88 30 C 88 34, 78 35, 46 35 C 14 35, 4 34, 4 30 Z" fill="#FFBB02" stroke="#D99B00" stroke-width="1.5" />
+  </g>
+  <text x="32" y="56" font-family="'Barlow Condensed', sans-serif" font-size="18" font-weight="700" fill="#001858" text-anchor="middle">DSR</text>
+</svg>
