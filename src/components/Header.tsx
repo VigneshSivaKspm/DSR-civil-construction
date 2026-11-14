@@ -62,32 +62,20 @@ export const Header: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           
-          {/* Brand Logo & Wordmark on White Surface */}
+          {/* Official Brand Logo */}
           <Link
             to="/"
-            className="flex items-center space-x-3 group focus:outline-none focus-visible:ring-2 focus-visible:ring-dsr-cyan py-1"
+            className="flex items-center group focus:outline-none focus-visible:ring-2 focus-visible:ring-dsr-cyan py-1"
             aria-label="DSR Civil Constructions Home"
           >
-            {/* SVG logo — vector-sharp at every screen density */}
-            <div className="relative flex-shrink-0 bg-white p-1 rounded-sm border border-dsr-silver/60 shadow-xs flex items-center justify-center transition-transform duration-200 group-hover:scale-102">
-              <img
-                src="/images/logo/dsr-logo.svg"
-                alt="DSR Civil Constructions brand emblem featuring the blue sloping roof, glass facade, and gold hard hat"
-                className="h-12 sm:h-14 w-auto object-contain"
-                width="56"
-                height="56"
-              />
-            </div>
-
-            {/* Legible text wordmark beside artwork for small screens and clarity */}
-            <div className="flex flex-col justify-center">
-              <span className="font-headline font-bold text-xl sm:text-2xl text-dsr-navy tracking-tight leading-none group-hover:text-dsr-roof transition-colors">
-                DSR
-              </span>
-              <span className="font-headline font-semibold text-[10px] sm:text-xs text-dsr-civil tracking-[0.22em] uppercase leading-tight">
-                CIVIL CONSTRUCTIONS
-              </span>
-            </div>
+            <img
+              src="/images/logo/dsr-logo-transparent.png"
+              alt="DSR Civil Constructions"
+              className="h-14 sm:h-16 w-auto object-contain transition-transform duration-200 group-hover:scale-103"
+              width="64"
+              height="64"
+              loading="eager"
+            />
           </Link>
 
           {/* Desktop Navigation (6 short labels) */}
