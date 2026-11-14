@@ -189,8 +189,8 @@ export const Header: React.FC = () => {
             aria-label="Site Navigation"
           >
             <div className="px-6 py-6 space-y-2">
-              <p className="text-xs uppercase tracking-widest text-dsr-civil/70 font-semibold mb-3">
-                Navigation
+              <p className="text-xs uppercase tracking-widest text-dsr-civil/70 font-semibold mb-3 font-mono">
+                பக்கங்கள் / NAVIGATION
               </p>
               {siteConfig.navLinks.map((item, idx) => (
                 <motion.div
@@ -228,7 +228,7 @@ export const Header: React.FC = () => {
 
               <div className="pt-2 space-y-2 text-sm text-dsr-navy">
                 <p className="text-xs font-semibold text-dsr-civil uppercase tracking-wider">
-                  Direct Phone Contacts
+                  நேரடித் தொலைபேசி எண்கள் (DIRECT CALL)
                 </p>
                 <div className="grid grid-cols-1 gap-2">
                   <a

@@ -3,6 +3,7 @@ import { BuildingIdea, VerifiedProject } from "../types";
 /**
  * Verified Projects
  * Kept tied strictly to verified client scope without invented claims or dates.
+ * Sub-content provided in authentic Tamil.
  */
 export const verifiedProjects: VerifiedProject[] = [
   {
@@ -11,28 +12,28 @@ export const verifiedProjects: VerifiedProject[] = [
     type: "Independent Residential",
     location: "Tamil Nadu",
     stage: "Structural Execution & Finishing",
-    scope: "RCC framed structure, cantilevered sunshades, brick masonry, and internal courtyards",
-    description: "An independent residence configured for natural ventilation and thermal protection. The structural frame incorporates deep cantilevered overhangs on south and west facades to minimise solar heat gain, paired with high-volume ceiling spans on the ground floor.",
+    scope: "ஆர்.சி.சி கட்டமைப்புத் தூண்கள், சூரிய வெப்பம் தடுக்கும் சன்ஷேடுகள், செங்கல் கட்டுமானம் மற்றும் காற்றோட்டமான உள் முற்றங்கள்",
+    description: "இயற்கையான காற்றோட்டம் மற்றும் வெப்பத் தணிப்பிற்காக வடிவமைக்கப்பட்ட தனித்துவமான இல்லம். தெற்கு மற்றும் மேற்குப் பகுதிகளில் சூரிய வெப்பத்தைத் தடுக்கும் ஆழமான கான்கிரீட் சன்ஷேடுகளும், தரைத்தளத்தில் விசாலமான கூரை அமைப்பும் ஒருங்கிணைக்கப்பட்டுள்ளன.",
     heroImage: "/images/architecture/hero-home.webp",
     gallery: [
       {
         url: "/images/architecture/hero-home.webp",
-        caption: "West facade with deep architectural sunshade and shaded terrace balcony.",
+        caption: "மேற்கு முகப்பு: ஆழமான கட்டடக்கலை சன்ஷேடு மற்றும் நிழல் தரும் மாடி பால்கனி.",
         alt: "Contemporary Indian residence showing cantilevered roofline and shaded balconies against blue sky",
       },
       {
         url: "/images/architecture/material-junction.webp",
-        caption: "Material junction: concrete slab edge, exposed wire-cut brickwork, and recessed glazing.",
+        caption: "கட்டுமானப் பொருட்கள் இணைப்பு: கான்கிரீட் தளம், வெளிப்புற செங்கல் வேலைப்பாடு மற்றும் கண்ணாடியின் நேர்த்தி.",
         alt: "Close-up of architectural material junction with concrete and exposed masonry",
       },
       {
         url: "/images/architecture/work-in-progress.webp",
-        caption: "Reinforced cement concrete column casting and curing sequence.",
+        caption: "ஆர்.சி.சி தூண்கள் கான்கிரீட் ஊற்றுதல் மற்றும் நீர் ஊற்றிப் பதப்படுத்துதல் (Curing).",
         alt: "Civil construction site with reinforced concrete framework and formwork",
       },
       {
         url: "/images/architecture/drawing-desk.webp",
-        caption: "Detailed architectural drawings and structural schedule for site coordination.",
+        caption: "களப் பணிகளுக்கான விரிவான கட்டடக்கலை வரைபடம் மற்றும் கட்டமைப்பு விவரங்கள்.",
         alt: "Architectural blueprints and elevation drawings on drafting table",
       }
     ],
@@ -43,37 +44,37 @@ export const verifiedProjects: VerifiedProject[] = [
 /**
  * Building Ideas (#ideas)
  * Conceptual design studies demonstrating practical architectural decisions for plot owners.
- * Each caption highlights one visible design decision.
+ * Sub-content and explanations provided in authentic Tamil.
  */
 export const buildingIdeas: BuildingIdea[] = [
   {
     id: "shaded-verandah",
     title: "Shaded Verandah",
-    subtitle: "Climate-responsive threshold",
+    subtitle: "தட்பவெப்ப நிலைக்கு ஏற்ற நுழைவு முற்றம்",
     image: "/images/architecture/idea-verandah.webp",
     alt: "Contemporary shaded verandah with natural stone paving and deep roof overhang",
-    designDecision: "Deep roof overhangs shade ground-floor glazing from intense afternoon sun while creating an all-weather outdoor threshold for family gatherings.",
-    explanation: "By extending the slab edge 2.4 meters past the glass line, the verandah reduces indoor cooling load substantially during summer months and keeps driving monsoon rains away from exterior doors.",
+    designDecision: "ஆழமான கூரை அமைப்புகள் பிற்பகல் சூரிய வெப்பத்திலிருந்து தரைத்தளக் கண்ணாடியைப் பாதுகாத்து, குடும்பத்தினர் ஒன்றுகூடும் அனைத்துக் காலநிலைகளுக்குமான வெளிப்புறத் திண்ணையை உருவாக்குகின்றன.",
+    explanation: "கண்ணாடி சுவரிலிருந்து 2.4 மீட்டர் தூரம் வரை கான்கிரீட் தளத்தை நீட்டிப்பதன் மூலம், கோடை காலத்தில் வீட்டின் உட்புற குளிர்ச்சி செலவு பெருமளவு குறைகிறது மற்றும் பருவமழைச்சாரல் கதவுகளின் மீது நேரடியாக அடிப்பதைத் தடுக்கிறது.",
     enquiryTopic: "Shaded Verandah Concept",
   },
   {
     id: "top-lit-stairwell",
     title: "Stairwell Lit from Above",
-    subtitle: "Vertical daylighting core",
+    subtitle: "மேலிருந்து இயற்கை வெளிச்சம் தரும் படிக்கட்டு",
     image: "/images/architecture/idea-stairwell.webp",
     alt: "Minimalist concrete and timber stairwell illuminated by a skylight opening directly overhead",
-    designDecision: "A top-lit skylight draws natural daylight deep into the building core, illuminating vertical circulation without compromising perimeter wall privacy.",
-    explanation: "In dense residential plots where neighbouring boundaries limit side windows, an overhead lightwell channels soft daylight down two floors, eliminating the need for artificial daytime lighting.",
+    designDecision: "மேற்கூரையில் அமைக்கப்பட்டுள்ள ஸ்கைலைட் (Skylight) ஜன்னல் வழியாக கட்டிடத்தின் மையப்பகுதி வரை இயற்கை வெளிச்சம் பாய்கிறது; சுவர்களின் தனிப்பட்ட சுதந்திரத்தைப் பாதிக்காமல் வெளிச்சம் கிடைக்கிறது.",
+    explanation: "அக்கம்பக்கத்து மனைகளால் பக்கவாட்டு ஜன்னல்கள் அமைக்க முடியாத நெருக்கமான இடங்களில், மேலிருந்து வரும் மென்மையான வெளிச்சம் இரண்டு தளங்களுக்கும் பகலில் மின்சார விளக்கின் தேவையின்றிப் பிரகாசமளிக்கிறது.",
     enquiryTopic: "Stairwell Lightwell Concept",
   },
   {
     id: "recessed-shopfront",
     title: "Shopfront with a Recessed Entrance",
-    subtitle: "Pedestrian street interface",
+    subtitle: "பாதசாரிகளுக்கான வசதியான கடை நுழைவாயில்",
     image: "/images/architecture/idea-shopfront.webp",
     alt: "Modern commercial storefront recessed under a clean architectural canopy",
-    designDecision: "The entrance sits back from the street, giving customers a shaded place to pause.",
-    explanation: "Recessing the main doorway by 1.8 meters shields the entrance from road dust and sudden downpours while providing an intuitive, welcoming transition zone between the bustling street and commercial interior.",
+    designDecision: "நுழைவாயில் சாலையிலிருந்து சற்று உள்வாங்கி அமைக்கப்பட்டிருப்பதால், வாடிக்கையாளர்கள் நிழலில் சற்று இளைப்பாறி வர ஏதுவாகிறது.",
+    explanation: "பிரதான கதவை 1.8 மீட்டர் உள்வாங்கி அமைப்பது தெருவின் புழுதி மற்றும் திடீர் மழையிலிருந்து நுழைவாயிலைப் பாதுகாப்பதோடு, பரபரப்பான தெருவிலிருந்து கடைக்குள் நுழைய ஒரு அமைதியான வரவேற்புப் பகுதியை வழங்குகிறது.",
     enquiryTopic: "Recessed Entrance Concept",
   },
 ];

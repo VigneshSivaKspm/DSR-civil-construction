@@ -56,17 +56,17 @@ export const EnquiryForm: React.FC<EnquiryFormProps> = ({ initialTopic = '' }) =
     const newErrors: FormErrors = {};
 
     if (!values.name.trim()) {
-      newErrors.name = 'Please enter your name.';
+      newErrors.name = 'தயவுசெய்து உங்கள் பெயரை உள்ளிடவும்.';
     }
 
     if (!values.mobile.trim()) {
-      newErrors.mobile = 'Please enter your mobile phone number.';
+      newErrors.mobile = 'தயவுசெய்து உங்கள் மொபைல் எண்ணை உள்ளிடவும்.';
     } else if (!validateMobile(values.mobile)) {
-      newErrors.mobile = 'Please enter a valid 10-digit Indian mobile number (e.g. +91 98765 43210).';
+      newErrors.mobile = 'சரியான 10 இலக்க இந்திய மொபைல் எண்ணை உள்ளிடவும் (எ.கா. 98765 43210).';
     }
 
     if (!values.location.trim()) {
-      newErrors.location = 'Please share your town or site plot location.';
+      newErrors.location = 'மனை அமைந்துள்ள ஊர் அல்லது பகுதியைக் குறிப்பிடவும்.';
     }
 
     setErrors(newErrors);
@@ -120,7 +120,7 @@ Website: ${siteConfig.domain}
           <div>
             <div className="flex justify-between items-baseline mb-1.5">
               <label htmlFor="enquiry-name" className="block text-sm font-semibold text-dsr-navy">
-                Your Name <span className="text-red-600" aria-hidden="true">*</span>
+                உங்கள் பெயர் (Name) <span className="text-red-600" aria-hidden="true">*</span>
               </label>
               {errors.name && (
                 <span className="text-xs text-red-600 flex items-center font-medium" role="alert">
@@ -134,7 +134,7 @@ Website: ${siteConfig.domain}
               type="text"
               required
               autoComplete="name"
-              placeholder="e.g. Anand Kumar"
+              placeholder="எ.கா. ஆனந்த் குமார்"
               value={values.name}
               onChange={(e) => {
                 setValues({ ...values, name: e.target.value });
@@ -151,7 +151,7 @@ Website: ${siteConfig.domain}
           <div>
             <div className="flex justify-between items-baseline mb-1.5">
               <label htmlFor="enquiry-mobile" className="block text-sm font-semibold text-dsr-navy">
-                Mobile Number <span className="text-red-600" aria-hidden="true">*</span>
+                மொபைல் எண் (Mobile Number) <span className="text-red-600" aria-hidden="true">*</span>
               </label>
               {errors.mobile && (
                 <span className="text-xs text-red-600 flex items-center font-medium" role="alert">
@@ -166,7 +166,7 @@ Website: ${siteConfig.domain}
               required
               autoComplete="tel"
               inputMode="tel"
-              placeholder="e.g. +91 98765 43210"
+              placeholder="எ.கா. +91 98765 43210"
               value={values.mobile}
               onChange={(e) => {
                 setValues({ ...values, mobile: e.target.value });
@@ -178,7 +178,7 @@ Website: ${siteConfig.domain}
               aria-invalid={errors.mobile ? 'true' : 'false'}
             />
             <p className="text-xs text-dsr-navy/60 mt-1">
-              Indian 10-digit mobile numbers with optional +91.
+              இந்திய 10 இலக்க மொபைல் எண் (+91 உடன் அல்லது இல்லாமல்).
             </p>
           </div>
 
@@ -186,7 +186,7 @@ Website: ${siteConfig.domain}
           <div>
             <div className="flex justify-between items-baseline mb-1.5">
               <label htmlFor="enquiry-location" className="block text-sm font-semibold text-dsr-navy">
-                Town or Site Location <span className="text-red-600" aria-hidden="true">*</span>
+                மனை அமைந்துள்ள ஊர் / பகுதி (Location) <span className="text-red-600" aria-hidden="true">*</span>
               </label>
               {errors.location && (
                 <span className="text-xs text-red-600 flex items-center font-medium" role="alert">
@@ -199,7 +199,7 @@ Website: ${siteConfig.domain}
               id="enquiry-location"
               type="text"
               required
-              placeholder="e.g. Salem, Namakkal, Erode, Coimbatore or nearby plot"
+              placeholder="எ.கா. சேலம், ஈரோடு, நாமக்கல், கோயம்புத்தூர் அல்லது மனை அமைவிடம்"
               value={values.location}
               onChange={(e) => {
                 setValues({ ...values, location: e.target.value });
@@ -215,7 +215,7 @@ Website: ${siteConfig.domain}
           {/* Project Type (Optional, preserved topic) */}
           <div>
             <label htmlFor="enquiry-type" className="block text-sm font-semibold text-dsr-navy mb-1.5">
-              Project Type <span className="text-xs text-dsr-navy/60 font-normal">(Optional)</span>
+              திட்ட வகை (Project Type) <span className="text-xs text-dsr-navy/60 font-normal">(Optional)</span>
             </label>
             <select
               id="enquiry-type"
@@ -239,12 +239,12 @@ Website: ${siteConfig.domain}
           {/* Short Description (Optional) */}
           <div>
             <label htmlFor="enquiry-desc" className="block text-sm font-semibold text-dsr-navy mb-1.5">
-              Tell us about your plot or ideas <span className="text-xs text-dsr-navy/60 font-normal">(Optional)</span>
+              உங்கள் மனை அல்லது திட்டத்தைப் பற்றிய குறிப்பு <span className="text-xs text-dsr-navy/60 font-normal">(விருப்பத்தேர்வு)</span>
             </label>
             <textarea
               id="enquiry-desc"
               rows={4}
-              placeholder="e.g. Plot dimensions, number of floors, ground floor room requirements, or target timeline."
+              placeholder="எ.கா. மனையின் அளவுகள் (Plot size), தேவையான தளங்கள், தரைத்தளத்தில் பெரியவர்களுக்கான அறை அல்லது திட்டமிட்ட கால அளவு."
               value={values.description}
               onChange={(e) => setValues({ ...values, description: e.target.value })}
               className="w-full px-4 py-3 bg-white border border-dsr-silver rounded-sm text-dsr-navy placeholder:text-dsr-navy/40 text-base focus:outline-none focus:ring-2 focus:ring-dsr-roof"
@@ -257,11 +257,11 @@ Website: ${siteConfig.domain}
               type="submit"
               className="w-full min-h-[50px] inline-flex items-center justify-center px-6 py-3.5 bg-dsr-gold hover:bg-dsr-gold-hover text-dsr-navy font-bold text-base tracking-wide rounded-sm shadow-sm transition-all duration-180 focus:outline-none focus-visible:ring-2 focus-visible:ring-dsr-navy"
             >
-              <span>Prepare my enquiry</span>
+              <span>ஆலோசனைச் சுருக்கத்தைத் தயார் செய்ய</span>
               <ArrowRight className="ml-2 w-5 h-5 text-dsr-navy" />
             </button>
             <p className="text-xs text-dsr-navy/70 text-center mt-2.5">
-              Generates a structured brief ready to discuss with our civil team.
+              பொறியாளர்களுடன் பேசுவதற்கு ஏதுவாக தெளிவான குறிப்பை உருவாக்கும்.
             </p>
           </div>
 

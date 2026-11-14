@@ -33,12 +33,12 @@ export const Footer: React.FC = () => {
                   DSR CIVIL CONSTRUCTIONS
                 </p>
                 <p className="text-dsr-glass text-sm mt-1 font-medium">
-                  Contemporary residential & civil engineering for modern land plots.
+                  நவீன மனைகளுக்கான பிரத்யேகக் குடியிருப்பு மற்றும் கட்டமைப்புப் பொறியியல்.
                 </p>
               </div>
 
               <p className="text-dsr-silver/90 text-sm max-w-sm leading-relaxed">
-                A building brief starts with the people who will use the space. Tell us about your land, the space you have in mind and the decisions you’d like help making.
+                ஒரு கட்டிட வரைவு, அந்த இடத்தில் வாழப்போகும் மனிதர்களின் தினசரி தேவைகளிலிருந்தே துவங்குகிறது. உங்கள் மனை, நீங்கள் அமைத்திட விரும்பும் இடவசதி மற்றும் திட்டமிட வேண்டிய முக்கிய முடிவுகளை எங்களுடன் பகிர்ந்துகொள்ளுங்கள்.
               </p>
 
               {/* Verified domain indicator */}
@@ -88,7 +88,7 @@ export const Footer: React.FC = () => {
                 Plot Discussions & Enquiries
               </p>
               <p className="text-sm text-dsr-silver/90">
-                Speak directly with our civil engineering and site evaluation team:
+                எங்கள் சிவில் பொறியியல் மற்றும் கள ஆய்வு குழுவினருடன் நேரடியாகப் பேசுங்கள்:
               </p>
 
               <div className="space-y-3 pt-2">
@@ -152,7 +152,7 @@ export const Footer: React.FC = () => {
             <div className="flex items-center space-x-6">
               <span>Domain: {siteConfig.domain}</span>
               <span className="hidden sm:inline">•</span>
-              <span>Site consultations by appointment</span>
+              <span>முன்பதிவு அடிப்படையில் நேரடி மனை ஆய்வுகள்</span>
             </div>
           </div>
         </div>

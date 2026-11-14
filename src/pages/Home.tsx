@@ -64,7 +64,7 @@ export const Home: React.FC = () => {
                   transition={{ duration: 0.55, delay: 0.18, ease: EASE_ARCHITECTURAL }}
                   className="text-base sm:text-lg text-dsr-navy/85 max-w-xl leading-relaxed"
                 >
-                  Tell us about your land, the space you have in mind and the decisions you’d like help making.
+                  உங்கள் மனை, நீங்கள் அமைத்திட விரும்பும் இடவசதி மற்றும் திட்டமிட வேண்டிய முக்கிய முடிவுகளை எங்களுடன் பகிர்ந்துகொள்ளுங்கள்.
                 </motion.p>
 
                 {/* Primary CTA & Secondary Link */}
@@ -125,11 +125,11 @@ export const Home: React.FC = () => {
                         Passive Climate Response
                       </p>
                       <p className="text-sm sm:text-base font-semibold text-dsr-silver">
-                        Cantilevered concrete sunshade meeting shaded garden verandah
+                        சூரிய வெப்பம் தடுக்கும் சன்ஷேடு மற்றும் நிழல் தரும் தோட்டத் திண்ணை
                       </p>
                     </div>
                     <span className="hidden sm:inline-block text-[11px] font-mono text-dsr-silver/70 border border-dsr-silver/30 px-2 py-0.5 rounded-xs">
-                      Tamil Nadu Plot Study
+                      தமிழ்நாடு மனை ஆய்வு
                     </span>
                   </div>
                 </motion.div>
@@ -162,7 +162,7 @@ export const Home: React.FC = () => {
                 What are you planning?
               </h2>
               <p className="text-base sm:text-lg text-dsr-navy/80 leading-relaxed">
-                Choose the focus that matches your plot. Each topic carries directly into your first consultation.
+                உங்கள் மனைக்கு ஏற்ற திட்டத்தைத் தேர்ந்தெடுங்கள். ஒவ்வொரு தலைப்பும் உங்கள் முதல் ஆலோசனையுடன் நேரடியாகத் தொடர்புடையது.
               </p>
             </ScrollReveal>
 
@@ -182,16 +182,16 @@ export const Home: React.FC = () => {
                         <h3 className="font-headline font-bold text-2xl sm:text-3xl text-dsr-navy group-hover:text-dsr-roof transition-colors">
                           A new home
                         </h3>
-                        <p className="text-xs text-dsr-navy/60 font-medium">Independent villa or multi-level family build</p>
+                        <p className="text-xs text-dsr-navy/60 font-medium">தனி வீடு அல்லது பல தலைமுறை குடும்ப இல்லம்</p>
                       </div>
                     </div>
 
                     <div className="lg:col-span-5 space-y-1.5">
                       <p className="text-base font-semibold text-dsr-civil">
-                        “Who needs a room on the ground floor?”
+                        “தரைத்தளத்தில் யாருக்கு அறை தேவை?”
                       </p>
                       <p className="text-sm text-dsr-navy/80 leading-relaxed">
-                        Material detail: Cantilevered RCC sunshade overhangs, floor-to-ceiling cross-ventilation, and shaded verandah thresholds.
+                        கட்டமைப்பு விவரம்: வெப்பம் தடுக்கும் சன்ஷேடுகள், தரை முதல் கூரை வரையிலான காற்றோட்டம் மற்றும் நிழல் தரும் திண்ணை.
                       </p>
                     </div>
 
@@ -200,7 +200,7 @@ export const Home: React.FC = () => {
                         to="/contact?topic=A%20new%20home"
                         className="min-h-[44px] inline-flex items-center space-x-2 text-sm font-semibold text-dsr-roof hover:text-dsr-civil group-hover:translate-x-1.5 transition-all py-2"
                       >
-                        <span>Discuss a new home</span>
+                        <span>புதிய இல்லம் பற்றிக் கலந்துரையாட</span>
                         <ChevronRight className="w-4 h-4" />
                       </Link>
                     </div>
@@ -221,16 +221,16 @@ export const Home: React.FC = () => {
                         <h3 className="font-headline font-bold text-2xl sm:text-3xl text-dsr-navy group-hover:text-dsr-roof transition-colors">
                           A space for business
                         </h3>
-                        <p className="text-xs text-dsr-navy/60 font-medium">Commercial floor plates & retail street presence</p>
+                        <p className="text-xs text-dsr-navy/60 font-medium">வணிகத் தளங்கள் மற்றும் பிரதான தெரு முகப்பு</p>
                       </div>
                     </div>
 
                     <div className="lg:col-span-5 space-y-1.5">
                       <p className="text-base font-semibold text-dsr-civil">
-                        “How will customers move through the entrance?”
+                        “வாடிக்கையாளர்கள் நுழைவாயில் வழியாக எளிதாக எவ்வாறு வந்து செல்ல வேண்டும்?”
                       </p>
                       <p className="text-sm text-dsr-navy/80 leading-relaxed">
-                        Material detail: Wide column-free interior spans, recessed customer pause zones, and heavy-duty structural flooring.
+                        கட்டமைப்பு விவரம்: தூண்களற்ற பரந்த உட்புற இடவசதி, வாடிக்கையாளர் நுழைவு பகுதி மற்றும் அதிக சுமை தாங்கும் தரைத்தளம்.
                       </p>
                     </div>
 
@@ -239,7 +239,7 @@ export const Home: React.FC = () => {
                         to="/contact?topic=A%20space%20for%20business"
                         className="min-h-[44px] inline-flex items-center space-x-2 text-sm font-semibold text-dsr-roof hover:text-dsr-civil group-hover:translate-x-1.5 transition-all py-2"
                       >
-                        <span>Discuss commercial space</span>
+                        <span>வணிக வளாகம் பற்றிக் கலந்துரையாட</span>
                         <ChevronRight className="w-4 h-4" />
                       </Link>
                     </div>
@@ -260,16 +260,16 @@ export const Home: React.FC = () => {
                         <h3 className="font-headline font-bold text-2xl sm:text-3xl text-dsr-navy group-hover:text-dsr-roof transition-colors">
                           Changes to an existing building
                         </h3>
-                        <p className="text-xs text-dsr-navy/60 font-medium">Vertical expansions & structural alterations</p>
+                        <p className="text-xs text-dsr-navy/60 font-medium">மேல்தள விரிவாக்கம் மற்றும் கட்டமைப்பு மாற்றங்கள்</p>
                       </div>
                     </div>
 
                     <div className="lg:col-span-5 space-y-1.5">
                       <p className="text-base font-semibold text-dsr-civil">
-                        “Which part of the building needs to work better?”
+                        “தற்போதைய கட்டிடத்தில் எந்தப் பகுதி சிறந்த இடவசதியுடன் மேம்படுத்தப்பட வேண்டும்?”
                       </p>
                       <p className="text-sm text-dsr-navy/80 leading-relaxed">
-                        Material detail: Load-bearing integrity checks, water-sealed old-to-new slab junctions, and tie-beam reinforcement.
+                        கட்டமைப்பு விவரம்: அஸ்திவார உறுதித்தன்மை ஆய்வு, பழைய மற்றும் புதிய தளங்களின் நீர்க்கசிவுத் தடுப்பு இணைப்பு.
                       </p>
                     </div>
 
@@ -278,7 +278,7 @@ export const Home: React.FC = () => {
                         to="/contact?topic=Changes%20to%20an%20existing%20building"
                         className="min-h-[44px] inline-flex items-center space-x-2 text-sm font-semibold text-dsr-roof hover:text-dsr-civil group-hover:translate-x-1.5 transition-all py-2"
                       >
-                        <span>Discuss renovations</span>
+                        <span>கட்டிட விரிவாக்கம் பற்றிக் கலந்துரையாட</span>
                         <ChevronRight className="w-4 h-4" />
                       </Link>
                     </div>
@@ -317,7 +317,7 @@ export const Home: React.FC = () => {
                 </div>
 
                 <p className="text-base text-dsr-navy/85 leading-relaxed">
-                  Every solid build starts as an architectural elevation before becoming a concrete structure. See how rooflines, shading projections and balcony levels translate directly from technical line drawings to the finished building.
+                  ஒவ்வொரு உறுதியான கட்டிடமும் கான்கிரீட் கட்டமைப்பாக மாறுவதற்கு முன்பு பொறியியல் வரைபடமாகவே துவங்குகிறது. கூரை அமைப்புகள், நிழல் தரும் முகப்புகள் மற்றும் பால்கனி மட்டங்கள் எவ்வாறு தொழில்நுட்ப வரைபடத்திலிருந்து உண்மையான கட்டிடமாக மாறுகின்றன என்பதை ஒப்பிட்டுப் பாருங்கள்.
                 </p>
 
                 <div className="p-4 bg-dsr-ice-wash border-l-4 border-dsr-roof rounded-xs space-y-2">
@@ -325,7 +325,7 @@ export const Home: React.FC = () => {
                     Structural Alignment
                   </p>
                   <p className="text-xs text-dsr-navy/80 leading-relaxed">
-                    Notice how the cantilevered upper roof trim and window mullions line up precisely between the CAD blueprint and the finished residence.
+                    கணினி வரைபடத்திற்கும் (CAD Blueprint) முடிக்கப்பட்ட வீட்டிற்கும் இடையே மேற்கூரை மற்றும் ஜன்னல் அமைப்புகள் எவ்வாறு துல்லியமாகப் பொருந்துகின்றன என்பதைக் கவனியுங்கள்.
                   </p>
                 </div>
 
@@ -334,7 +334,7 @@ export const Home: React.FC = () => {
                     to="/projects#ideas"
                     className="inline-flex items-center text-sm font-semibold text-dsr-roof hover:text-dsr-civil py-1 group"
                   >
-                    <span>View more architectural concepts</span>
+                    <span>கூடுதல் கட்டடக் கலை வடிவங்களை பார்வையிட</span>
                     <ArrowRight className="ml-1.5 w-4 h-4 group-hover:translate-x-1 transition-transform" />
                   </Link>
                 </div>
@@ -373,7 +373,7 @@ export const Home: React.FC = () => {
                 What happens before the first brick?
               </h2>
               <p className="text-base sm:text-lg text-dsr-silver/90 leading-relaxed">
-                Before excavation equipment arrives on your land, four deliberate decisions turn a concept into a predictable, well-sequenced construction programme.
+                உங்கள் நிலத்தில் பூமி தோண்டும் இயந்திரங்கள் இறங்குவதற்கு முன்பே, நான்கு தெளிவான திட்டமிடல்கள் ஒரு கற்பனையைத் துல்லியமான கட்டுமானப் பணியாக மாற்றுகின்றன.
               </p>
             </ScrollReveal>
 
@@ -402,7 +402,7 @@ export const Home: React.FC = () => {
               </h2>
 
               <p className="text-lg sm:text-xl text-dsr-navy/85 max-w-2xl mx-auto leading-relaxed">
-                Bring a location, a sketch or simply an idea.
+                மனையின் இருப்பிடம், ஒரு சிறிய வரைபடம் அல்லது உங்கள் கனவு எதுவாக இருந்தாலும் கொண்டு வாருங்கள்.
               </p>
 
               <div className="pt-2">
@@ -418,7 +418,7 @@ export const Home: React.FC = () => {
               </div>
 
               <p className="text-xs text-dsr-navy/60 font-mono pt-2">
-                Plot evaluation & structural brief consultations across Tamil Nadu
+                தமிழ்நாடு முழுவதும் மனை மதிப்பீடு மற்றும் கட்டுமான ஆலோசனைகள்
               </p>
             </ScrollReveal>
 

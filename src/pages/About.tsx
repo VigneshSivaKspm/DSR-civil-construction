@@ -35,7 +35,7 @@ export const About: React.FC = () => {
 
               {/* Opening Core Premise */}
               <p className="text-xl sm:text-2xl text-dsr-civil font-medium mt-4 leading-snug">
-                A building brief starts with the people who will use the space.
+                ஒரு கட்டிட வரைவு, அந்த இடத்தில் வாழப்போகும் மனிதர்களின் தினசரி தேவைகளிலிருந்தே துவங்குகிறது.
               </p>
             </ScrollReveal>
 
@@ -55,7 +55,7 @@ export const About: React.FC = () => {
                   />
                 </div>
                 <div className="p-4 bg-dsr-ice-wash border-t border-dsr-silver flex items-center justify-between text-xs text-dsr-navy/80 font-mono">
-                  <span>Site Coordination & Elevation Studies</span>
+                  <span>மனை ஒருங்கிணைப்பு மற்றும் முகப்புத் தோற்ற ஆய்வுகள்</span>
                   <span className="text-dsr-roof font-semibold">Scale 1:100</span>
                 </div>
               </ScrollReveal>
@@ -67,22 +67,22 @@ export const About: React.FC = () => {
                     <SunMedium className="w-5 h-5" />
                   </div>
                   <h2 className="font-headline font-bold text-2xl sm:text-3xl text-dsr-navy leading-tight">
-                    Enduring engineering rooted in everyday routines.
+                    அன்றாட வாழ்க்கைத் தேவைகளில் வேரூன்றிய நீடித்த பொறியியல்.
                   </h2>
                   <p className="text-base text-dsr-navy/85 leading-relaxed">
-                    We look at civil construction not merely as pouring concrete and laying bricks, but as structuring permanent protection against heat, rain, and changing family requirements over decades.
+                    நாங்கள் கட்டுமானத்தை வெறும் கான்கிரீட் கலவையாகவோ, செங்கல் அடுக்குகளாகவோ மட்டும் பார்ப்பதில்லை; வெயில், மழை மற்றும் குடும்பத்தின் தலைமுறைத் தேவைகளைத் தாங்கி நிற்கும் பாதுகாப்பான கட்டமைப்பாகவே உருவாக்குகிறோம்.
                   </p>
                   <p className="text-sm text-dsr-navy/80 leading-relaxed">
-                    By translating plot orientation and local soil conditions into coordinated structural frames, every room earns its place before execution begins.
+                    மனையின் அமைவிடம் மற்றும் உள்ளூர் மண்ணின் தன்மையை ஆராய்ந்து பிரதான கட்டமைப்புத் தூண்களை அமைப்பதன் மூலம், ஒவ்வொரு அறையும் உறுதியான பயன்பாட்டைப் பெறுகிறது.
                   </p>
                 </div>
 
                 <div className="pt-6 border-t border-dsr-silver/60">
                   <p className="text-xs font-mono uppercase tracking-wider text-dsr-civil font-semibold">
-                    Direct Team Oversight on Site
+                    களத்தில் பொறியாளர்களின் நேரடிக் கண்காணிப்பு
                   </p>
                   <p className="text-sm font-semibold text-dsr-navy mt-1">
-                    Tamil Nadu Civil & Structural Projects
+                    தமிழ்நாடு சிவில் மற்றும் கட்டமைப்புப் பணிகள்
                   </p>
                 </div>
               </ScrollReveal>
@@ -110,7 +110,7 @@ export const About: React.FC = () => {
                 What matters in the first conversation
               </h2>
               <p className="text-base sm:text-lg text-dsr-navy/80 leading-relaxed">
-                Before talking about square footage or finishing tiles, we unpack three fundamental dimensions that govern how well your building will function.
+                அளவுகள் அல்லது டைல்ஸ் பற்றிப் பேசுவதற்கு முன், கட்டிடம் சிறப்பாகச் செயல்பட உதவும் மூன்று அடிப்படைக் காரணிகளை ஆராய்கிறோம்.
               </p>
             </ScrollReveal>
 
@@ -131,15 +131,15 @@ export const About: React.FC = () => {
                 </h3>
 
                 <p className="text-sm text-dsr-navy/85 leading-relaxed">
-                  Every plot possesses distinct sun angles, boundary setbacks, access roads, and soil strata that dictate structural foundation design.
+                  ஒவ்வொரு மனைக்கும் தனித்துவமான சூரிய வெளிச்சம், எல்லை இடைவெளிகள் மற்றும் அஸ்திவாரத்தைத் தீர்மானிக்கும் மண் அடுக்குகள் உள்ளன.
                 </p>
 
                 <div className="p-3.5 bg-dsr-ice-wash rounded-xs border-l-2 border-dsr-roof">
                   <p className="text-xs font-semibold text-dsr-civil uppercase tracking-wider mb-1">
-                    Practical Example
+                    நடைமுறை உதாரணம்
                   </p>
                   <p className="text-xs text-dsr-navy/80 leading-relaxed">
-                    Aligning the building mass to catch south-westerly breezes during hot afternoons while establishing natural stormwater runoff gradients toward rainwater recharge sumps.
+                    பிற்பகல் தென்மேற்கு காற்றைப் பெறும் வகையிலும், மழைநீர் சேகரிப்புக்குத் தகுந்த வடிகால் வசதியுடனும் கட்டிடத்தை அமைத்தல்.
                   </p>
                 </div>
               </ScrollReveal>
@@ -158,15 +158,15 @@ export const About: React.FC = () => {
                 </h3>
 
                 <p className="text-sm text-dsr-navy/85 leading-relaxed">
-                  Spaces must serve the daily habits, quiet hours, gathering rituals, and long-term aging-in-place needs of everyone under the roof.
+                  கட்டிடம் அங்கு வசிப்பவர்களின் அன்றாடப் பழக்கங்கள், அமைதியான நேரங்கள் மற்றும் முதியோர்களின் வசதிக்கேற்ப அமைய வேண்டும்.
                 </p>
 
                 <div className="p-3.5 bg-dsr-ice-wash rounded-xs border-l-2 border-dsr-roof">
                   <p className="text-xs font-semibold text-dsr-civil uppercase tracking-wider mb-1">
-                    Practical Example
+                    நடைமுறை உதாரணம்
                   </p>
                   <p className="text-xs text-dsr-navy/80 leading-relaxed">
-                    Placing an accessible master suite on the ground floor with zero threshold transitions for grandparents, buffered from living room activity and street noise.
+                    பெரியவர்களுக்காகத் தரைத்தளத்திலேயே படி ஏறி இறங்கத் தேவையில்லாத படுக்கையறையை அமைத்து, வரவேற்பறைச் சத்தத்திலிருந்து தனித்து வைத்தல்.
                   </p>
                 </div>
               </ScrollReveal>
@@ -185,15 +185,15 @@ export const About: React.FC = () => {
                 </h3>
 
                 <p className="text-sm text-dsr-navy/85 leading-relaxed">
-                  Balancing private retreat with family connection, and preventing harsh climate exposure without feeling enclosed behind fortress walls.
+                  குடும்பத்தின் தனிப்பட்ட சுதந்திரத்தையும் அதே நேரத்தில் இயற்கையான காற்றோட்டத்தையும் சமநிலைப்படுத்துதல்.
                 </p>
 
                 <div className="p-3.5 bg-dsr-ice-wash rounded-xs border-l-2 border-dsr-roof">
                   <p className="text-xs font-semibold text-dsr-civil uppercase tracking-wider mb-1">
-                    Practical Example
+                    நடைமுறை உதாரணம்
                   </p>
                   <p className="text-xs text-dsr-navy/80 leading-relaxed">
-                    Shading a west-facing living room with deep horizontal concrete sunshades without losing the garden view or restricting gentle evening daylight.
+                    மேற்குப் பகுதி வரவேற்பறைக்கு ஆழமான கான்கிரீட் சன்ஷேடுகள் அமைத்து, தோட்டக் காட்சியையும் வெளிச்சத்தையும் குறைக்காமல் வெப்பத்தைத் தடுத்தல்.
                   </p>
                 </div>
               </ScrollReveal>
@@ -233,14 +233,14 @@ export const About: React.FC = () => {
               </div>
 
               <p className="text-sm sm:text-base text-dsr-navy/80 max-w-2xl mx-auto leading-relaxed">
-                DSR Civil Constructions is anchored by on-site civil engineers who supervise every pour, steel reinforcement cage, and curing cycle. Detailed founder biographies and field team portraits will be published here as approved documentation is catalogued.
+                ஒவ்வொரு கான்கிரீட் ஊற்றுதல், டி.எம்.டி கம்பி கட்டுதல் மற்றும் நீர் ஊற்றிப் பதப்படுத்துதல் (Curing) வரை களத்தில் உள்ள சிவில் இன்ஜினியர்களால் நேரடியாகக் கண்காணிக்கப்படுகிறது. விரிவான நிர்வாகக் குழு மற்றும் பொறியாளர்களின் விவரங்கள் விரைவில் வெளியிடப்படும்.
               </p>
               <div className="pt-2 flex items-center justify-center space-x-6 text-xs text-dsr-navy/60 font-mono">
-                <span>Verified Quality Checks</span>
+                <span>உறுதிப்படுத்தப்பட்ட தரப் பரிசோதனைகள்</span>
                 <span>•</span>
-                <span>On-Site Supervision</span>
+                <span>நேரடிக் களக் கண்காணிப்பு</span>
                 <span>•</span>
-                <span>Direct Accountability</span>
+                <span>நேரடிப் பொறுப்புடைமை</span>
               </div>
             </ScrollReveal>
           </div>
@@ -257,7 +257,7 @@ export const About: React.FC = () => {
                 Talk about your plans
               </h2>
               <p className="text-base sm:text-lg text-dsr-silver/90 max-w-xl mx-auto leading-relaxed">
-                Whether you have an empty plot, municipal blueprints, or questions about construction stages, we are ready to discuss your build.
+                வெற்று மனை, நகராட்சி வரைபடம் அல்லது கட்டுமான நிலைகள் குறித்த சந்தேகங்கள் எதுவாக இருந்தாலும், நாங்கள் உங்கள் திட்டத்தைப் பற்றிக் கலந்துரையாடத் தயாராக உள்ளோம்.
               </p>
               <div className="pt-2">
                 <Magnetic strength={10}>

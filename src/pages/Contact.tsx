@@ -31,7 +31,7 @@ export const Contact: React.FC = () => {
 
             {/* Required Opening Copy */}
             <p className="text-lg sm:text-xl text-dsr-civil font-medium mt-4 leading-relaxed">
-              A location and a rough idea are enough to start. Share what you know so far.
+              மனையின் இருப்பிடமும் ஒரு சிறிய திட்டமும் இருந்தாலே போதுமானது. உங்கள் நிலத்தைப் பற்றி நீங்கள் அறிந்தவற்றை எங்களிடம் பகிருங்கள்.
             </p>
           </ScrollReveal>
 
@@ -45,7 +45,7 @@ export const Contact: React.FC = () => {
                   Share Your Plot & Vision
                 </h2>
                 <p className="text-sm text-dsr-navy/70 mt-1">
-                  Required fields are marked with an asterisk (*). Personal information remains strictly private.
+                  * குறியிடப்பட்டவை கட்டாயப் புலங்கள். உங்கள் தனிப்பட்ட விவரங்கள் முழுப் பாதுகாப்புடன் வைக்கப்படும்.
                 </p>
               </div>
 
@@ -66,7 +66,7 @@ export const Contact: React.FC = () => {
                   Call our engineers directly
                 </h2>
                 <p className="text-sm text-dsr-silver/90 mt-2 leading-relaxed">
-                  Discuss your plot boundaries, soil condition, or construction timing directly over phone:
+                  உங்கள் மனை எல்லைகள், மண் தன்மை அல்லது கட்டுமான நேரம் குறித்து எங்கள் பொறியாளர்களுடன் தொலைபேசியில் நேரடியாகப் பேசுங்கள்:
                 </p>
               </div>
 
@@ -134,7 +134,7 @@ export const Contact: React.FC = () => {
                   <div>
                     <p className="font-semibold text-white">Site Visits & Field Inspections</p>
                     <p className="mt-0.5 text-dsr-silver/80">
-                      Coordinated across Tamil Nadu plots by appointment.
+                      முன்பதிவு அடிப்படையில் தமிழ்நாடு முழுவதும் உள்ள மனைகளுக்கு நேரடி கள ஆய்வுகள் மேற்கொள்ளப்படும்.
                     </p>
                   </div>
                 </div>
@@ -144,7 +144,7 @@ export const Contact: React.FC = () => {
                   <div>
                     <p className="font-semibold text-white">Consultation Hours</p>
                     <p className="mt-0.5 text-dsr-silver/80">
-                      Monday to Saturday: 9:00 AM – 7:00 PM IST
+                      திங்கள் முதல் சனி வரை: காலை 9:00 முதல் மாலை 7:00 வரை (IST)
                     </p>
                   </div>
                 </div>
@@ -163,7 +163,7 @@ export const Contact: React.FC = () => {
               {/* Privacy Assurance */}
               <div className="p-3 bg-dsr-civil/40 rounded-xs border border-dsr-cyan/20 flex items-center space-x-2 text-[11px] text-dsr-silver/80">
                 <ShieldCheck className="w-4 h-4 text-dsr-cyan flex-shrink-0" />
-                <span>Your contact details are strictly kept off public URLs and analytics.</span>
+                <span>உங்கள் தொடர்பு விவரங்கள் தனிப்பட்ட முறையில் முழுப் பாதுகாப்புடன் வைக்கப்படும்.</span>
               </div>
 
             </ScrollReveal>

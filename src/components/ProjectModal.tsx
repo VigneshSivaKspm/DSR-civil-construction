@@ -88,7 +88,7 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({
             {projectTitle}
           </p>
           <p className="text-sm font-semibold">
-            Image {currentIndex + 1} of {items.length}
+            புகைப்படம் {currentIndex + 1} / {items.length}
           </p>
         </div>
 

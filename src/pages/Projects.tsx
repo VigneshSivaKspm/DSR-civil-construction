@@ -56,7 +56,7 @@ export const Projects: React.FC = () => {
               </h1>
 
               <p className="text-lg sm:text-xl text-dsr-silver/90 mt-4 leading-relaxed">
-                Examining the structural details, material junctions, and real-world construction sequences behind every project.
+                ஒவ்வொரு திட்டத்தின் பின்னணியிலும் உள்ள கட்டமைப்பு நுணுக்கங்கள், கட்டுமானப் பொருட்கள் மற்றும் நேரடிக் கட்டுமான வரிசைகளை உற்றுநோக்குங்கள்.
               </p>
             </ScrollReveal>
 
@@ -97,7 +97,7 @@ export const Projects: React.FC = () => {
                     aria-label={`Open photo gallery for ${featuredProject.title}`}
                   >
                     <Maximize2 className="w-4 h-4 text-dsr-cyan" />
-                    <span>View Project Gallery ({featuredProject.gallery.length} Photos)</span>
+                    <span>புகைப்படத் தொகுப்பைப் பார்க்க ({featuredProject.gallery.length} படங்கள்)</span>
                   </button>
 
                   {/* Verified Project Badge */}
@@ -126,7 +126,7 @@ export const Projects: React.FC = () => {
                         to="/contact?topic=A%20new%20home"
                         className="min-h-[46px] inline-flex items-center justify-center px-6 py-2.5 bg-dsr-gold hover:bg-dsr-gold-hover text-dsr-navy font-bold text-sm rounded-sm transition-all shadow-sm hover:shadow-md self-start lg:self-center flex-shrink-0"
                       >
-                        <span>Discuss a similar project</span>
+                        <span>இதேபோன்ற இல்லம் பற்றிக் கலந்துரையாட</span>
                         <ArrowUpRight className="ml-1.5 w-4 h-4 text-dsr-navy" />
                       </Link>
                     </Magnetic>
@@ -136,12 +136,12 @@ export const Projects: React.FC = () => {
                   <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                     
                     <div className="p-4 bg-dsr-navy/60 border border-dsr-civil/60 rounded-xs transition-colors hover:border-dsr-cyan/40">
-                      <p className="text-[11px] font-mono text-dsr-cyan uppercase tracking-wider">Project Type</p>
+                      <p className="text-[11px] font-mono text-dsr-cyan uppercase tracking-wider">திட்ட வகை</p>
                       <p className="text-sm font-semibold text-white mt-1">{featuredProject.type}</p>
                     </div>
 
                     <div className="p-4 bg-dsr-navy/60 border border-dsr-civil/60 rounded-xs transition-colors hover:border-dsr-cyan/40">
-                      <p className="text-[11px] font-mono text-dsr-cyan uppercase tracking-wider">Site Location</p>
+                      <p className="text-[11px] font-mono text-dsr-cyan uppercase tracking-wider">அமைவிடம்</p>
                       <p className="text-sm font-semibold text-white mt-1 flex items-center">
                         <MapPin className="w-3.5 h-3.5 text-dsr-roof mr-1 inline" />
                         {featuredProject.location}
@@ -149,12 +149,12 @@ export const Projects: React.FC = () => {
                     </div>
 
                     <div className="p-4 bg-dsr-navy/60 border border-dsr-civil/60 rounded-xs transition-colors hover:border-dsr-gold/40">
-                      <p className="text-[11px] font-mono text-dsr-gold uppercase tracking-wider">Construction Stage</p>
+                      <p className="text-[11px] font-mono text-dsr-gold uppercase tracking-wider">கட்டுமான நிலை</p>
                       <p className="text-sm font-semibold text-white mt-1">{featuredProject.stage}</p>
                     </div>
 
                     <div className="p-4 bg-dsr-navy/60 border border-dsr-civil/60 rounded-xs transition-colors hover:border-dsr-cyan/40">
-                      <p className="text-[11px] font-mono text-dsr-cyan uppercase tracking-wider">Civil Scope</p>
+                      <p className="text-[11px] font-mono text-dsr-cyan uppercase tracking-wider">கட்டுமானப் பணிகள்</p>
                       <p className="text-xs font-medium text-dsr-silver/90 mt-1 leading-snug">{featuredProject.scope}</p>
                     </div>
 
@@ -163,7 +163,7 @@ export const Projects: React.FC = () => {
                   {/* Interactive Thumbnails for Gallery Access */}
                   <div className="pt-2">
                     <p className="text-xs font-mono text-dsr-silver/70 mb-3 uppercase tracking-wider">
-                      Click any photo to open full-screen inspection:
+                      பெரிதாக்கிப் பார்க்க ஏதேனும் ஒரு புகைப்படத்தைக் கிளிக் செய்யவும்:
                     </p>
                     <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
                       {featuredProject.gallery.map((photo, pIdx) => (
@@ -226,7 +226,7 @@ export const Projects: React.FC = () => {
                 Building ideas
               </h2>
               <p className="text-base sm:text-lg text-dsr-silver/90 leading-relaxed">
-                Practical architectural decisions plot owners can incorporate to improve shading, vertical daylighting, and customer entrance access.
+                நிழல் தரும் முகப்புகள், இயற்கை வெளிச்சம் மற்றும் வாடிக்கையாளர் நுழைவுப் பாதைகளை மேம்படுத்த உதவும் நடைமுறைத் திட்டங்கள்.
               </p>
             </ScrollReveal>
 
@@ -277,7 +277,7 @@ export const Projects: React.FC = () => {
                       {/* Required Visible Design Decision Explanation */}
                       <div className="p-3.5 bg-dsr-navy/80 rounded-xs border-l-2 border-dsr-cyan space-y-1">
                         <p className="text-xs font-semibold text-dsr-cyan uppercase tracking-wider">
-                          Visible Design Decision
+                          வெளிப்படையான வடிவமைப்புத் திட்டம்
                         </p>
                         <p className="text-sm font-semibold text-white leading-snug">
                           “{concept.designDecision}”
@@ -296,7 +296,7 @@ export const Projects: React.FC = () => {
                       to={`/contact?topic=${encodeURIComponent(concept.enquiryTopic)}`}
                       className="min-h-[44px] w-full inline-flex items-center justify-between px-4 py-2.5 bg-dsr-civil hover:bg-dsr-roof text-white font-semibold text-xs tracking-wider uppercase rounded-xs transition-colors border border-dsr-roof hover:border-dsr-cyan/40"
                     >
-                      <span>Explore this concept on your plot</span>
+                      <span>உங்கள் மனையில் இத்திட்டத்தை அமைத்திட</span>
                       <ArrowUpRight className="w-4 h-4 text-dsr-cyan group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
                     </Link>
                   </div>

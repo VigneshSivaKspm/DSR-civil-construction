@@ -11,11 +11,11 @@ export const Services: React.FC = () => {
   const [activeCategory, setActiveCategory] = useState<string>('all');
 
   const categories = [
-    { id: 'all', label: 'All Services (7)' },
-    { id: 'residential', label: 'Residential & Renovations' },
-    { id: 'commercial', label: 'Commercial Buildings' },
-    { id: 'planning', label: 'Planning & Turnkey' },
-    { id: 'specialized', label: 'Industrial & Infrastructure' },
+    { id: 'all', label: 'அனைத்து சேவைகள் (7)' },
+    { id: 'residential', label: 'குடியிருப்பு வீடுகள்' },
+    { id: 'commercial', label: 'வணிக வளாகங்கள்' },
+    { id: 'planning', label: 'வரைபடம் & Turnkey' },
+    { id: 'specialized', label: 'தொழில்துறை & உள்கட்டமைப்பு' },
   ];
 
   const filteredServices = activeCategory === 'all'
@@ -52,7 +52,7 @@ export const Services: React.FC = () => {
               </h1>
 
               <p className="text-lg sm:text-xl text-dsr-silver/95 mt-4 leading-relaxed max-w-3xl">
-                Start with the rooms you need today and the space you might need later. Every project begins with a structured review of your plot and family or commercial requirements.
+                இன்று உங்களுக்குத் தேவையான அறைகள் மற்றும் எதிர்கால இடவசதிகளோடு துவங்குங்கள். ஒவ்வொரு திட்டமும் உங்கள் மனை மற்றும் குடும்பத்தின் தேவைகளை முறையாக ஆராய்ந்து துவங்குகிறது.
               </p>
 
             </div>
@@ -70,7 +70,7 @@ export const Services: React.FC = () => {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex items-center space-x-2 overflow-x-auto no-scrollbar py-1">
               <span className="text-xs font-mono font-semibold text-dsr-civil uppercase tracking-wider hidden md:inline mr-2">
-                Filter Scope:
+                கட்டுமானப் பிரிவுகள்:
               </span>
               {categories.map((cat) => (
                 <button
@@ -118,7 +118,7 @@ export const Services: React.FC = () => {
                           {/* Dynamic Cyan Rule extending on hover in 180ms */}
                           <div className="h-0.5 w-12 bg-dsr-cyan/40 group-hover:w-28 group-hover:bg-dsr-cyan transition-all duration-[180ms] ease-out" />
                           <span className="text-xs font-mono uppercase tracking-wider text-dsr-civil font-semibold">
-                            Confirmed Service
+                            உறுதிப்படுத்தப்பட்ட சேவை
                           </span>
                         </div>
 
@@ -135,7 +135,7 @@ export const Services: React.FC = () => {
                         <div className="pt-2 space-y-1.5">
                           <div className="flex items-center space-x-2 text-xs font-semibold uppercase tracking-wider text-dsr-navy">
                             <Users className="w-4 h-4 text-dsr-roof" />
-                            <span>Who it suits</span>
+                            <span>யாருக்கு ஏற்றது</span>
                           </div>
                           <p className="text-sm text-dsr-navy/85 leading-relaxed">
                             {service.whoItSuits}
@@ -146,7 +146,7 @@ export const Services: React.FC = () => {
                         {service.estimatedTimeline && (
                           <div className="flex items-center space-x-2 text-xs font-mono text-dsr-civil pt-1">
                             <Clock className="w-3.5 h-3.5 text-dsr-cyan" />
-                            <span>Timeline: {service.estimatedTimeline}</span>
+                            <span>கால அளவு: {service.estimatedTimeline}</span>
                           </div>
                         )}
 
@@ -154,7 +154,7 @@ export const Services: React.FC = () => {
                         {service.keyMaterials && (
                           <div className="pt-2">
                             <p className="text-[11px] font-mono uppercase tracking-wider text-dsr-navy/60 mb-1.5">
-                              Key Material Specifications:
+                              முதன்மை கட்டுமானப் பொருட்கள்:
                             </p>
                             <div className="flex flex-wrap gap-1.5">
                               {service.keyMaterials.map((mat, mIdx) => (
@@ -178,7 +178,7 @@ export const Services: React.FC = () => {
                           <div className="flex items-center space-x-2">
                             <Hammer className="w-4 h-4 text-dsr-roof" />
                             <h3 className="text-xs font-mono font-bold uppercase tracking-wider text-dsr-civil">
-                              Scope to discuss in your consultation:
+                              ஆலோசனையில் விவாதிக்க வேண்டிய முக்கிய அம்சங்கள்:
                             </h3>
                           </div>
                           <ul className="space-y-2.5">
@@ -195,7 +195,7 @@ export const Services: React.FC = () => {
                         <div className="p-4 bg-white border-l-4 border-dsr-gold rounded-xs shadow-xs space-y-1">
                           <div className="flex items-center space-x-2 text-xs font-bold text-dsr-navy uppercase tracking-wider">
                             <HelpCircle className="w-4 h-4 text-dsr-gold" />
-                            <span>Helpful Question to Consider</span>
+                            <span>சிந்திக்க வேண்டிய முக்கியமான கேள்வி</span>
                           </div>
                           <p className="text-sm font-semibold text-dsr-civil">
                             {service.helpfulQuestion}
@@ -209,13 +209,13 @@ export const Services: React.FC = () => {
                               to={`/contact?topic=${encodeURIComponent(service.enquiryTopic)}`}
                               className="min-h-[48px] inline-flex items-center justify-center px-6 py-3 bg-dsr-civil hover:bg-dsr-roof text-white font-semibold text-sm rounded-sm transition-all shadow-xs hover:shadow-md"
                             >
-                              <span>Enquire about this service</span>
+                              <span>இச்சேவை பற்றிக் கலந்துரையாட</span>
                               <ArrowUpRight className="ml-2 w-4 h-4 text-dsr-cyan" />
                             </Link>
                           </Magnetic>
 
                           <span className="text-xs font-mono text-dsr-navy/60">
-                            Preselects “{service.enquiryTopic}” on Contact
+                            தொடர்பு படிவத்தில் தானாகத் தேர்வு செய்யப்படும்
                           </span>
                         </div>
 
@@ -239,7 +239,7 @@ export const Services: React.FC = () => {
                     Direct on-site engineering supervision at every pour.
                   </h3>
                   <p className="text-sm text-dsr-silver leading-relaxed">
-                    We exclusively deploy laboratory batch-tested concrete, primary mill Fe 550D TMT steel rebar, and verified water-curing regimes for all residential and commercial structural frameworks across Tamil Nadu.
+                    தமிழ்நாடு முழுவதும் அனைத்து குடியிருப்பு மற்றும் வணிகக் கட்டிடங்களுக்கும் ஆய்வகப் பரிசோதனை செய்யப்பட்ட கான்கிரீட், முதன்மை Fe 550D TMT கம்பிகள் மற்றும் முறையான நீர் ஊற்றிப் பதப்படுத்துதலை (Water-curing) மட்டுமே நாங்கள் உறுதியாகப் பின்பற்றுகிறோம்.
                   </p>
                 </div>
                 <div className="md:col-span-4 flex md:justify-end">

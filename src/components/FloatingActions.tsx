@@ -23,7 +23,7 @@ export const FloatingActions: React.FC = () => {
             <div className="flex items-center space-x-2">
               <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
               <span className="text-xs font-mono font-semibold uppercase tracking-wider text-dsr-cyan">
-                Civil Engineering Team
+                கட்டுமானப் பொறியியல் பிரிவு
               </span>
             </div>
             <button
@@ -45,7 +45,7 @@ export const FloatingActions: React.FC = () => {
                 <PhoneCall className="w-4 h-4 text-white" />
               </div>
               <div>
-                <p className="text-[10px] text-dsr-cyan font-mono uppercase tracking-wider">Primary Civil Line</p>
+                <p className="text-[10px] text-dsr-cyan font-mono uppercase tracking-wider">முதன்மைப் பொறியியல் எண்</p>
                 <p className="text-sm font-bold text-white tracking-wide">{siteConfig.primaryPhone.display}</p>
               </div>
             </a>
@@ -58,7 +58,7 @@ export const FloatingActions: React.FC = () => {
                 <Phone className="w-4 h-4 text-white" />
               </div>
               <div>
-                <p className="text-[10px] text-dsr-cyan font-mono uppercase tracking-wider">Secondary Field Line</p>
+                <p className="text-[10px] text-dsr-cyan font-mono uppercase tracking-wider">தள மேற்பார்வை எண்</p>
                 <p className="text-sm font-bold text-white tracking-wide">{siteConfig.secondaryPhone.display}</p>
               </div>
             </a>
@@ -85,7 +85,7 @@ export const FloatingActions: React.FC = () => {
         {/* Modern Sleek Hover Pill */}
         <div className="hidden sm:flex items-center space-x-2.5 absolute right-16 top-1/2 -translate-y-1/2 px-3.5 py-2 bg-dsr-navy/95 backdrop-blur-xl text-white text-xs font-semibold rounded-full shadow-[0_10px_25px_rgba(0,0,0,0.3)] opacity-0 group-hover:opacity-100 transition-all duration-200 pointer-events-none border border-white/15 whitespace-nowrap translate-x-2 group-hover:translate-x-0">
           <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
-          <span className="text-white/80">Call Engineer:</span>
+          <span className="text-white/80">பொறியாளரை அழைக்க:</span>
           <span className="font-bold text-dsr-cyan tracking-wide">{siteConfig.primaryPhone.display}</span>
         </div>
       </div>
@@ -117,8 +117,8 @@ export const FloatingActions: React.FC = () => {
           {/* Modern Sleek Hover Pill */}
           <div className="hidden sm:flex items-center space-x-2.5 absolute right-16 top-1/2 -translate-y-1/2 px-3.5 py-2 bg-[#075E54]/95 backdrop-blur-xl text-white text-xs font-semibold rounded-full shadow-[0_10px_25px_rgba(0,0,0,0.3)] opacity-0 group-hover:opacity-100 transition-all duration-200 pointer-events-none border border-emerald-400/25 whitespace-nowrap translate-x-2 group-hover:translate-x-0">
             <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
-            <span className="font-bold text-white tracking-wide">Chat on WhatsApp</span>
-            <span className="text-emerald-200/80 text-[11px]">• Instant Reply</span>
+            <span className="font-bold text-white tracking-wide">WhatsApp-ல் உரையாடுங்கள்</span>
+            <span className="text-emerald-200/80 text-[11px]">• உடனடி பதில்</span>
           </div>
         </div>
       )}

@@ -66,7 +66,7 @@ export const ElevationComparison: React.FC = () => {
             Design Concept
           </span>
           <span className="text-xs text-dsr-navy/70 hidden sm:inline">
-            Drag handle or use arrow keys to inspect the structural alignment
+            வரைபடத்தையும் கட்டடத் தோற்றத்தையும் ஒப்பிட ஹேண்டிலை நகர்த்தவும்
           </span>
         </div>
 
@@ -83,7 +83,7 @@ export const ElevationComparison: React.FC = () => {
             aria-pressed={sliderPosition < 30}
           >
             <Compass className="w-3.5 h-3.5" />
-            <span>Drawing</span>
+            <span>வரைபடம் (CAD)</span>
           </button>
           <button
             type="button"
@@ -96,7 +96,7 @@ export const ElevationComparison: React.FC = () => {
             aria-pressed={sliderPosition > 70}
           >
             <Eye className="w-3.5 h-3.5" />
-            <span>Finished view</span>
+            <span>நேரடித் தோற்றம்</span>
           </button>
         </div>
       </div>
@@ -137,7 +137,7 @@ export const ElevationComparison: React.FC = () => {
           />
           {/* Subtle label overlay */}
           <div className="absolute bottom-4 right-4 bg-dsr-navy/80 backdrop-blur-sm text-white text-xs px-2.5 py-1 rounded-xs border border-white/20 font-medium">
-            Finished View
+            நேரடித் தோற்றம்
           </div>
         </div>
 
@@ -192,7 +192,7 @@ export const ElevationComparison: React.FC = () => {
 
             {/* Drawing Label */}
             <div className="absolute bottom-4 left-4 bg-dsr-civil/90 backdrop-blur-sm text-white text-xs px-2.5 py-1 rounded-xs border border-dsr-cyan/40 font-mono">
-              Elevation Drawing
+              முகப்பு வரைபடம் (CAD)
             </div>
           </div>
         </div>
@@ -215,7 +215,7 @@ export const ElevationComparison: React.FC = () => {
       {/* Accessible Native Range Slider for Assistive Technologies */}
       <div className="mt-4 flex items-center space-x-3">
         <label htmlFor="elevation-range-input" className="text-xs font-medium text-dsr-navy/80 min-w-max">
-          Comparison Ratio:
+          ஒப்பீட்டு விகிதம்:
         </label>
         <input
           id="elevation-range-input"
