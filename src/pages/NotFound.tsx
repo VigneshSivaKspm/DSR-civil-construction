@@ -15,6 +15,20 @@ export const NotFound: React.FC = () => {
 
       <main id="main-content" className="w-full bg-dsr-white min-h-[70vh] flex items-center justify-center py-16 px-4">
         <div className="max-w-xl mx-auto text-center space-y-6">
+          {/* Brand identity card — reassures the visitor they're still on the right site */}
+          <div className="flex justify-center mb-2">
+            <div className="inline-block p-3 bg-dsr-ice-wash rounded-sm border border-dsr-silver shadow-xs">
+              <img
+                src="/images/logo/dsr-logo-grid-card.png"
+                alt="DSR Civil Constructions"
+                className="h-20 w-auto object-contain mx-auto"
+                width="120"
+                height="80"
+                loading="eager"
+              />
+            </div>
+          </div>
+
           <span className="font-mono text-xs uppercase tracking-widest text-dsr-cyan font-bold bg-dsr-ice-wash px-3 py-1 rounded-xs border border-dsr-silver">
             Error 404 • பக்கம் கண்டறியப்படவில்லை
           </span>

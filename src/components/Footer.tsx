@@ -17,9 +17,9 @@ export const Footer: React.FC = () => {
             
             {/* Col 1-5: Brand & Purpose */}
             <div className="lg:col-span-5 space-y-6">
-              <div className="inline-block bg-white p-2.5 rounded-sm border border-dsr-silver/40 shadow-sm">
+              <div className="inline-block bg-dsr-civil/30 p-2.5 rounded-sm border border-dsr-civil/50 shadow-sm">
                 <img
-                  src="/images/logo/dsr-logo-cropped.png"
+                  src="/images/logo/dsr-logo-transparent.png"
                   alt="DSR Civil Constructions brand emblem"
                   className="h-16 sm:h-20 w-auto object-contain"
                   width="80"
@@ -72,7 +72,7 @@ export const Footer: React.FC = () => {
                 ))}
                 <li>
                   <Link
-                    to="/projects#ideas"
+                    to="/gallery#ideas"
                     className="text-dsr-silver/80 hover:text-dsr-cyan transition-colors flex items-center group py-1"
                   >
                     <span className="w-1.5 h-1.5 bg-dsr-roof rounded-full mr-2.5 group-hover:bg-dsr-cyan transition-colors" />

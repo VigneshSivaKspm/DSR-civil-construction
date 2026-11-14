@@ -1,2 +1,5 @@
+# 301 Redirect old /projects to new /gallery
+/projects    /gallery    301
+
 # Netlify: real files (per-route prerendered HTML, sitemap, robots) win; everything else falls back to the SPA.
 /*    /index.html   200

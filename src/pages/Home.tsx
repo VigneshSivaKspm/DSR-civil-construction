@@ -85,7 +85,7 @@ export const Home: React.FC = () => {
                   </Magnetic>
 
                   <Link
-                    to="/projects#ideas"
+                    to="/gallery#ideas"
                     className="min-h-[50px] inline-flex items-center justify-center px-6 py-3.5 bg-white hover:bg-dsr-ice-wash text-dsr-roof hover:text-dsr-civil border border-dsr-roof/40 font-semibold text-base rounded-sm transition-all duration-180 hover:border-dsr-roof"
                   >
                     <span>Explore building ideas</span>
@@ -331,7 +331,7 @@ export const Home: React.FC = () => {
 
                 <div className="pt-2">
                   <Link
-                    to="/projects#ideas"
+                    to="/gallery#ideas"
                     className="inline-flex items-center text-sm font-semibold text-dsr-roof hover:text-dsr-civil py-1 group"
                   >
                     <span>கூடுதல் கட்டடக் கலை வடிவங்களை பார்வையிட</span>

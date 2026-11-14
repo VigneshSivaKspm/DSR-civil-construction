@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { Routes, Route, useLocation } from 'react-router-dom';
+import { Routes, Route, Navigate, useLocation } from 'react-router-dom';
 import { AnimatePresence, motion, useReducedMotion } from 'framer-motion';
 import { CursorProvider } from './context/CursorContext';
 import { CustomCursor } from './components/CustomCursor';
@@ -11,7 +11,8 @@ import { FloatingActions } from './components/FloatingActions';
 import { Home } from './pages/Home';
 import { About } from './pages/About';
 import { Services } from './pages/Services';
-import { Projects } from './pages/Projects';
+import { Gallery } from './pages/Gallery';
+import { Owner } from './pages/Owner';
 import { Contact } from './pages/Contact';
 import { NotFound } from './pages/NotFound';
 import { pageTransitionVariants } from './motion/motionTokens';
@@ -69,7 +70,11 @@ export const App: React.FC = () => {
                 <Route path="/" element={<Home />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/services" element={<Services />} />
-                <Route path="/projects" element={<Projects />} />
+                <Route path="/gallery" element={<Gallery />} />
+                <Route path="/projects" element={<Navigate to="/gallery" replace />} />
+                <Route path="/owner" element={<Owner />} />
+                <Route path="/founder" element={<Navigate to="/owner" replace />} />
+                <Route path="/leadership" element={<Navigate to="/owner" replace />} />
                 <Route path="/contact" element={<Contact />} />
                 <Route path="*" element={<NotFound />} />
               </Routes>

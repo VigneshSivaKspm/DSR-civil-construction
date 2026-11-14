@@ -230,7 +230,19 @@ export const Services: React.FC = () => {
             {/* Quality Standards & Materials Checkpoint Box */}
             <ScrollReveal delay={0.1} className="mt-16 p-8 sm:p-10 bg-dsr-navy text-white rounded-sm shadow-md border border-dsr-civil">
               <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
-                <div className="md:col-span-8 space-y-3">
+                <div className="md:col-span-2 flex items-center justify-center md:justify-start">
+                  <div className="p-2 bg-white/10 rounded-sm border border-dsr-cyan/20">
+                    <img
+                      src="/images/logo/dsr-logo-original.jpg"
+                      alt="DSR Civil Constructions"
+                      className="h-16 w-auto object-contain"
+                      width="80"
+                      height="64"
+                      loading="lazy"
+                    />
+                  </div>
+                </div>
+                <div className="md:col-span-6 space-y-3">
                   <div className="flex items-center space-x-2 text-xs font-mono uppercase tracking-widest text-dsr-cyan">
                     <ShieldCheck className="w-4 h-4 text-dsr-gold" />
                     <span>DSR Civil Quality Standards</span>

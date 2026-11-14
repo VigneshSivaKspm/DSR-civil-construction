@@ -1,4 +1,11 @@
 {
+  "redirects": [
+    {
+      "source": "/projects",
+      "destination": "/gallery",
+      "permanent": true
+    }
+  ],
   "rewrites": [
     {
       "source": "/(.*)",

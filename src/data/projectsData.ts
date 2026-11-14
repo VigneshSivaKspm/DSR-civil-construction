@@ -35,6 +35,11 @@ export const verifiedProjects: VerifiedProject[] = [
         url: "/images/architecture/drawing-desk.webp",
         caption: "களப் பணிகளுக்கான விரிவான கட்டடக்கலை வரைபடம் மற்றும் கட்டமைப்பு விவரங்கள்.",
         alt: "Architectural blueprints and elevation drawings on drafting table",
+      },
+      {
+        url: "/images/architecture/test.jpg",
+        caption: "கட்டிட வேலைப்பாடு மற்றும் முடிக்கப்பட்ட கான்கிரீட் மேற்பரப்பு விவரம்.",
+        alt: "Detailed view of civil construction finishing work and concrete surface quality",
       }
     ],
     isApproved: true,

@@ -23,6 +23,15 @@ export const DEFAULT_OG_IMAGE = {
   type: 'image/jpeg',
 };
 
+/** Official Founder & Chief Civil Engineer Image for /owner and personal SEO */
+export const FOUNDER_IMAGE = {
+  url: `${SITE_URL}/images/founder/selvaraj.jpeg`,
+  width: 1280,
+  height: 960,
+  alt: 'Mr. D. Selvaraj, Founder & Chief Civil Engineer of DSR Civil Constructions',
+  type: 'image/jpeg',
+};
+
 export const LOGO_URL = `${SITE_URL}/images/logo/dsr-logo-cropped.png`;
 
 export const PHONES = ['+91-73732-12354', '+91-90803-46867'];
@@ -43,7 +52,7 @@ export interface RouteSeo {
   /** Whether the page should be indexed. */
   index: boolean;
   /** schema.org type of the page itself. */
-  schemaType: 'WebPage' | 'AboutPage' | 'ContactPage' | 'CollectionPage';
+  schemaType: 'WebPage' | 'AboutPage' | 'ContactPage' | 'CollectionPage' | 'ProfilePage';
   breadcrumb: string;
   /** Crawlable fallback content injected into prerendered HTML (replaced by React on load). */
   h1: string;
@@ -141,29 +150,60 @@ export const routes: RouteSeo[] = [
       'Residential construction and custom homes, commercial buildings and retail complexes, turnkey civil delivery, renovations and extensions, architectural planning with 2D/3D elevations and approvals, industrial sheds and warehouses, and compound walls with site development.',
   },
   {
-    path: '/projects',
-    title: 'Our Projects & Building Ideas | DSR Civil Constructions',
-    ogTitle: 'Inside the build | Projects & Building Ideas',
+    path: '/gallery',
+    title: 'Project Gallery & Construction Execution | DSR Civil Constructions',
+    ogTitle: 'Inside the build | Project Gallery & Construction Ideas',
     description:
-      'See verified civil construction work and practical building ideas from DSR Civil Constructions: RCC structure, sunshades, verandahs and shopfronts in Tamil Nadu.',
+      'Explore real on-site civil construction photos, engineering supervision, RCC structures, and practical building ideas from DSR Civil Constructions across Tamil Nadu.',
     keywords: [
       ...baseKeywords,
-      'construction projects Tamil Nadu',
-      'house elevation designs',
-      'contemporary home design India',
+      'civil construction gallery',
+      'construction site photos Tamil Nadu',
+      'building contractors gallery',
       'RCC structure work',
-      'sunshade design',
-      'shopfront design',
+      'civil engineer supervision',
+      'house construction photos',
+      'commercial building construction Tamil Nadu',
       'building ideas for plot owners',
     ],
     changefreq: 'monthly',
     priority: 0.8,
     index: true,
     schemaType: 'CollectionPage',
-    breadcrumb: 'Projects',
+    breadcrumb: 'Gallery',
     h1: 'Inside the build',
     intro:
-      'Verified construction execution and practical building ideas from DSR Civil Constructions across Tamil Nadu, including a contemporary multi-level residence with RCC structure and deep sunshades.',
+      'Verified on-site construction execution, engineering supervision, and practical building ideas from DSR Civil Constructions across Tamil Nadu, including residential homes, commercial projects, and RCC structures.',
+  },
+  {
+    path: '/owner',
+    title: 'Mr. D. Selvaraj | Founder & Civil Contractor | DSR Civil Constructions',
+    ogTitle: 'Mr. D. Selvaraj | Founder & Chief Civil Engineer',
+    description:
+      'Meet Mr. D. Selvaraj, Founder & Chief Civil Engineer of DSR Civil Constructions. Direct on-site engineering supervision from soil to slab across Tamil Nadu. Call +91 73732 12354 or +91 90803 46867.',
+    keywords: [
+      ...baseKeywords,
+      'Mr. D. Selvaraj',
+      'D. Selvaraj',
+      'D. Selvaraj civil contractor',
+      'DSR Civil Constructions founder',
+      'civil engineer Tamil Nadu',
+      'building contractor owner',
+      'Selvaraj builder',
+      'civil contractor phone number',
+      'Selvaraj civil engineer',
+      'டி. செல்வராஜ்',
+      'டி.எஸ்.ஆர் செல்வராஜ்',
+    ],
+    image: FOUNDER_IMAGE,
+    changefreq: 'monthly',
+    priority: 0.9,
+    index: true,
+    schemaType: 'ProfilePage',
+    breadcrumb: 'Owner',
+    h1: 'Mr. D. Selvaraj — Founder & Chief Civil Engineer',
+    intro:
+      'Mr. D. Selvaraj is the Founder and Chief Civil Engineer of DSR Civil Constructions, directing turnkey residential and commercial projects across Tamil Nadu with hands-on site supervision from soil to slab.',
   },
   {
     path: '/contact',
@@ -226,6 +266,13 @@ export const organizationSchema = () => ({
     height: 885,
   },
   image: DEFAULT_OG_IMAGE.url,
+  founder: {
+    '@type': 'Person',
+    '@id': `${SITE_URL}/owner#founder`,
+    name: 'Mr. D. Selvaraj',
+    jobTitle: 'Founder & Chief Civil Engineer',
+    image: FOUNDER_IMAGE.url,
+  },
   description:
     'Civil construction company in Tamil Nadu delivering residential homes, villas, commercial buildings, industrial sheds, renovations and compound walls with turnkey execution.',
   telephone: PHONES[0],
@@ -322,6 +369,78 @@ const servicesListSchema = () => ({
     })),
 });
 
+export const personSchema = () => ({
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  '@id': `${SITE_URL}/owner#founder`,
+  name: 'Mr. D. Selvaraj',
+  givenName: 'Selvaraj',
+  familyName: 'D',
+  additionalName: 'D. Selvaraj',
+  honorificPrefix: 'Mr.',
+  alternateName: ['Er. Selvaraj', 'D. Selvaraj', 'Selvaraj DSR', 'டி. செல்வராஜ்', 'டி.எஸ்.ஆர் செல்வராஜ்'],
+  jobTitle: 'Founder & Chief Civil Engineer',
+  worksFor: {
+    '@type': 'GeneralContractor',
+    '@id': ORG_ID,
+    name: SITE_NAME,
+  },
+  image: {
+    '@type': 'ImageObject',
+    '@id': `${FOUNDER_IMAGE.url}#image`,
+    url: FOUNDER_IMAGE.url,
+    contentUrl: FOUNDER_IMAGE.url,
+    caption: 'Mr. D. Selvaraj, Founder & Chief Civil Engineer of DSR Civil Constructions',
+    representativeOfPage: true,
+    width: FOUNDER_IMAGE.width,
+    height: FOUNDER_IMAGE.height,
+  },
+  telephone: PHONES,
+  url: `${SITE_URL}/owner`,
+  address: {
+    '@type': 'PostalAddress',
+    addressRegion: 'Tamil Nadu',
+    addressCountry: 'IN',
+  },
+  nationality: {
+    '@type': 'Country',
+    name: 'India',
+  },
+  knowsAbout: [
+    'Civil Construction',
+    'RCC Structural Engineering',
+    'Residential Villa Construction',
+    'Commercial Building Construction',
+    'Site Supervision & Quality Control',
+    'Turnkey Contracting',
+    'Tamil Nadu Building Construction',
+  ],
+  description:
+    'Mr. D. Selvaraj is the Founder and Chief Civil Engineer of DSR Civil Constructions, directing turnkey residential and commercial projects across Tamil Nadu with direct on-site supervision from soil to slab.',
+});
+
+export const founderImageSchema = () => ({
+  '@context': 'https://schema.org',
+  '@type': 'ImageObject',
+  '@id': `${FOUNDER_IMAGE.url}#image`,
+  url: FOUNDER_IMAGE.url,
+  contentUrl: FOUNDER_IMAGE.url,
+  name: 'Mr. D. Selvaraj - Founder & Chief Civil Engineer',
+  caption: 'Mr. D. Selvaraj, Founder and Chief Civil Engineer of DSR Civil Constructions in executive office',
+  description: 'Official executive portrait of Mr. D. Selvaraj, Founder & Chief Civil Engineer of DSR Civil Constructions seated in his office.',
+  author: {
+    '@type': 'Organization',
+    name: SITE_NAME,
+  },
+  copyrightHolder: {
+    '@type': 'Organization',
+    name: SITE_NAME,
+  },
+  width: FOUNDER_IMAGE.width,
+  height: FOUNDER_IMAGE.height,
+  encodingFormat: 'image/jpeg',
+});
+
 /**
  * All JSON-LD blocks for a route. Organisation + website entities are repeated on every page so each
  * page is self-contained for crawlers that do not resolve cross-page @id references.
@@ -333,5 +452,10 @@ export const schemasForRoute = (route: RouteSeo): object[] => {
   const crumb = breadcrumbSchema(route) as Record<string, unknown>;
   blocks.push({ ...crumb, '@id': `${absoluteUrl(route.path)}#breadcrumb` });
   if (route.path === '/services') blocks.push(servicesListSchema());
+  if (route.path === '/owner') {
+    blocks.push(personSchema(), founderImageSchema());
+  } else if (route.path === '/about') {
+    blocks.push(personSchema());
+  }
   return blocks;
 };

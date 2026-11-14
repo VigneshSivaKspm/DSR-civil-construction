@@ -40,6 +40,8 @@ export const headBlock = (route: RouteSeo): string => {
     `<link rel="canonical" href="${url}" />`,
     ...(route.path === '/'
       ? ['<link rel="preload" as="image" href="/images/architecture/hero-home.webp" type="image/webp" fetchpriority="high" />']
+      : route.path === '/owner'
+      ? ['<link rel="preload" as="image" href="/images/founder/selvaraj.jpeg" type="image/jpeg" fetchpriority="high" />']
       : []),
     `<link rel="alternate" hreflang="en-IN" href="${url}" />`,
     `<link rel="alternate" hreflang="x-default" href="${url}" />`,

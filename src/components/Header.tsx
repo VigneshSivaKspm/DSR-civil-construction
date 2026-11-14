@@ -68,10 +68,10 @@ export const Header: React.FC = () => {
             className="flex items-center space-x-3 group focus:outline-none focus-visible:ring-2 focus-visible:ring-dsr-cyan py-1"
             aria-label="DSR Civil Constructions Home"
           >
-            {/* The original artwork placed on a white surface with colours & proportions intact */}
+            {/* SVG logo — vector-sharp at every screen density */}
             <div className="relative flex-shrink-0 bg-white p-1 rounded-sm border border-dsr-silver/60 shadow-xs flex items-center justify-center transition-transform duration-200 group-hover:scale-102">
               <img
-                src="/images/logo/dsr-logo-cropped.png"
+                src="/images/logo/dsr-logo.svg"
                 alt="DSR Civil Constructions brand emblem featuring the blue sloping roof, glass facade, and gold hard hat"
                 className="h-12 sm:h-14 w-auto object-contain"
                 width="56"
@@ -90,14 +90,14 @@ export const Header: React.FC = () => {
             </div>
           </Link>
 
-          {/* Desktop Navigation (5 short labels) */}
-          <nav className="hidden md:flex items-center space-x-1 lg:space-x-6" aria-label="Main Navigation">
+          {/* Desktop Navigation (6 short labels) */}
+          <nav className="hidden md:flex items-center space-x-0.5 lg:space-x-3 xl:space-x-5" aria-label="Main Navigation">
             {siteConfig.navLinks.map((item) => (
               <NavLink
                 key={item.path}
                 to={item.path}
                 className={({ isActive }) =>
-                  `relative px-3 py-2 text-sm lg:text-base font-medium transition-colors ${
+                  `relative px-2.5 lg:px-3 py-2 text-sm lg:text-[15px] font-medium transition-colors ${
                     isActive
                       ? 'text-dsr-roof font-semibold'
                       : 'text-dsr-navy hover:text-dsr-roof'

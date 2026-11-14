@@ -205,42 +205,89 @@ export const About: React.FC = () => {
 
 
         {/* =========================================================
-            3. RESERVED SPACE: Founder Story / Team Portrait
-            (Reserved only when supplied; strictly tied to verified info)
+            3. FOUNDER & CIVIL ENGINEERING LEADERSHIP
             ========================================================= */}
         <section className="py-14 sm:py-20 bg-dsr-white border-b border-dsr-silver" aria-labelledby="leadership-heading">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <ScrollReveal className="p-8 sm:p-12 border border-dsr-silver rounded-sm bg-dsr-ice-wash/30 text-center max-w-4xl mx-auto space-y-6">
-              
-              {/* Official Brand Artwork on White Surface with Colours Intact */}
-              <div className="inline-block p-4 sm:p-6 bg-white rounded-sm border border-dsr-silver/80 shadow-sm mx-auto">
-                <img
-                  src="/images/logo/dsr-logo-cropped.png"
-                  alt="DSR Civil Constructions official emblem featuring the modern house, sloping blue roof and yellow hard hat"
-                  className="h-28 sm:h-36 w-auto object-contain mx-auto"
-                  width="144"
-                  height="144"
-                />
-              </div>
+            <ScrollReveal className="p-6 sm:p-10 lg:p-12 border border-dsr-silver rounded-sm bg-dsr-ice-wash/40 max-w-5xl mx-auto shadow-sm">
+              <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                
+                {/* Official Founder Portrait */}
+                <div className="lg:col-span-5 relative">
+                  <div className="relative aspect-[4/3] sm:aspect-[4/3] rounded-sm overflow-hidden border border-dsr-silver shadow-md bg-white">
+                    <img
+                      src="/images/founder/selvaraj.jpeg"
+                      alt="Er. Selvaraj, Founder & Chief Civil Engineer of DSR Civil Constructions"
+                      className="w-full h-full object-cover object-top"
+                      loading="lazy"
+                      width="1280"
+                      height="960"
+                    />
+                    <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-dsr-navy/95 via-dsr-navy/60 to-transparent p-4 text-white">
+                      <p className="text-xs font-mono uppercase tracking-widest text-dsr-cyan">
+                        Founder & Chief Engineer
+                      </p>
+                      <p className="text-base font-bold text-white mt-0.5">
+                        Mr. D. Selvaraj
+                      </p>
+                    </div>
+                  </div>
+                </div>
 
-              <div>
-                <span className="inline-block text-xs uppercase tracking-widest text-dsr-civil font-mono font-semibold px-2.5 py-1 bg-white border border-dsr-silver rounded-xs">
-                  Civil Engineering Leadership
-                </span>
-                <h2 id="leadership-heading" className="font-headline font-bold text-2xl sm:text-3xl text-dsr-navy mt-2">
-                  Hands-on Engineering from Soil to Slab
-                </h2>
-              </div>
+                {/* Content Column */}
+                <div className="lg:col-span-7 space-y-5">
+                  <div className="flex items-center space-x-3">
+                    <span className="inline-block text-xs uppercase tracking-widest text-dsr-civil font-mono font-semibold px-2.5 py-1 bg-white border border-dsr-silver rounded-xs">
+                      Leadership & Direct Supervision
+                    </span>
+                    <span className="text-xs font-mono text-dsr-roof font-semibold">100% Verified</span>
+                  </div>
 
-              <p className="text-sm sm:text-base text-dsr-navy/80 max-w-2xl mx-auto leading-relaxed">
-                ஒவ்வொரு கான்கிரீட் ஊற்றுதல், டி.எம்.டி கம்பி கட்டுதல் மற்றும் நீர் ஊற்றிப் பதப்படுத்துதல் (Curing) வரை களத்தில் உள்ள சிவில் இன்ஜினியர்களால் நேரடியாகக் கண்காணிக்கப்படுகிறது. விரிவான நிர்வாகக் குழு மற்றும் பொறியாளர்களின் விவரங்கள் விரைவில் வெளியிடப்படும்.
-              </p>
-              <div className="pt-2 flex items-center justify-center space-x-6 text-xs text-dsr-navy/60 font-mono">
-                <span>உறுதிப்படுத்தப்பட்ட தரப் பரிசோதனைகள்</span>
-                <span>•</span>
-                <span>நேரடிக் களக் கண்காணிப்பு</span>
-                <span>•</span>
-                <span>நேரடிப் பொறுப்புடைமை</span>
+                  <h2 id="leadership-heading" className="font-headline font-bold text-3xl sm:text-4xl text-dsr-navy tracking-tight leading-tight">
+                    Hands-on Engineering from Soil to Slab.
+                  </h2>
+
+                  <p className="text-base text-dsr-navy/85 leading-relaxed">
+                    “ஒரு உறுதியான கட்டிடம் அலுவலக மேஜை வரைபடங்களில் மட்டும் முடிந்துவிடுவதில்லை; ஒவ்வொரு மனையின் மண் பரிசோதனை, அஸ்திவாரம் தோண்டுதல், கான்கிரீட் தரம், டி.எம்.டி கம்பி பிணைப்பு மற்றும் நீர் ஊற்றிப் பதப்படுத்துதல் (Curing) வரை களத்தில் நின்று நேரடியாக மேற்பார்வையிடுவதே எங்களின் தர உத்தரவாதம்.”
+                  </p>
+
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-1 text-xs text-dsr-navy/80 font-mono">
+                    <div className="p-3 bg-white rounded-xs border border-dsr-silver flex items-center space-x-2">
+                      <span className="w-2 h-2 rounded-full bg-dsr-cyan flex-shrink-0" />
+                      <span>ஆய்வகப் பரிசோதனை கான்கிரீட்</span>
+                    </div>
+                    <div className="p-3 bg-white rounded-xs border border-dsr-silver flex items-center space-x-2">
+                      <span className="w-2 h-2 rounded-full bg-dsr-gold flex-shrink-0" />
+                      <span>நேரடிக் களக் கண்காணிப்பு</span>
+                    </div>
+                    <div className="p-3 bg-white rounded-xs border border-dsr-silver flex items-center space-x-2">
+                      <span className="w-2 h-2 rounded-full bg-dsr-roof flex-shrink-0" />
+                      <span>Fe 550D TMT கம்பிகள்</span>
+                    </div>
+                    <div className="p-3 bg-white rounded-xs border border-dsr-silver flex items-center space-x-2">
+                      <span className="w-2 h-2 rounded-full bg-dsr-civil flex-shrink-0" />
+                      <span>துல்லியமான CAD திட்டமிடல்</span>
+                    </div>
+                  </div>
+
+                  <div className="pt-3 flex flex-col sm:flex-row sm:items-center gap-4">
+                    <Link
+                      to="/owner"
+                      className="inline-flex items-center space-x-2 text-sm font-bold text-dsr-navy bg-dsr-gold hover:bg-dsr-gold-hover px-4 py-2.5 rounded-xs shadow-xs transition-colors"
+                    >
+                      <span>திரு. D. செல்வராஜ் அவர்களின் விபரங்கள் (Meet Founder & Owner)</span>
+                      <ArrowUpRight className="w-4 h-4 text-dsr-navy" />
+                    </Link>
+                    <Link
+                      to="/gallery"
+                      className="inline-flex items-center space-x-2 text-sm font-semibold text-dsr-roof hover:text-dsr-civil group py-1"
+                    >
+                      <span>களப் புகைப்படங்களைப் பார்வையிட (View Gallery)</span>
+                      <ArrowUpRight className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+                    </Link>
+                  </div>
+                </div>
+
               </div>
             </ScrollReveal>
           </div>
