@@ -9,7 +9,7 @@
  */
 import { servicesData } from '../data/servicesData';
 
-export const SITE_URL = 'https://dsrcivilconstructions.in';
+export const SITE_URL = 'https://www.dsrcivilconstructions.in';
 export const SITE_NAME = 'DSR Civil Constructions';
 export const SITE_LOCALE = 'en_IN';
 export const SITE_TWITTER_CARD = 'summary_large_image';
